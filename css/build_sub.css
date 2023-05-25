@@ -7,12 +7,8 @@ nav{
     background-color: rgb(235, 235, 241);
 }
 .logo{
-    width: 200px;
-    height: 50px;
-    margin: 0 auto;
-    margin-top: 20px;
-    font-size: 30px;
-    font-weight: bold;
+    margin-left: 60px;
+    margin-top: 15px;
 }
 .nav-com{
     width: 500px;
@@ -24,14 +20,24 @@ nav{
 }
 .nav-con li{
     float: left;
-    padding-left: 45px;
-    padding-top: 10px;
+    margin-left: 45px;
+    margin-top: 20px;
+    color: #16181b;
+}
+.nav-con li:hover{
+    border-bottom: 2px solid #02643F;
 }
 .search-bar{
-    width: 200px;
-    height: 45px;
-    margin-top: 15px;
-    margin-left: 20px;
-    border-radius: 15px;
-    border: 2px solid #02643f;
+    margin-top: 35px; 
+ }
+#subForm{
+    width: 50%;
+    margin:  0 auto;
+    margin-top: 50px;
+}
+.options h3{
+    margin-top: 25px;
+}
+.btn{
+    margin-top: 30px;
 }

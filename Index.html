@@ -14,8 +14,9 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
     <!--Internal Links-->
     <link rel="stylesheet" href="css/main.css">
     <script src="js/index.js"></script>
@@ -34,13 +35,13 @@
                         <ul>
                             <a href="#about-us"><li>About Us</li></a>
                             <a href="#sub-month"><li>Subs of the Month</li></a>
-                            <a href="pages/checkout.html"><li>Checkout</li></a>
                             <a href="pages/build_sub.html"><li>Build a Sub</li></a>
-                        </ul>
+                            <a href="pages/checkout.html"><li>Checkout</li></a>
+                        </ul> 
                     </div>
                 </div>
                 <div class="col-3">                    
-                    <form>
+                    <form class="search-bar">
                         <input class="search-text" type="text" placeholder="Search">
                         <button class="search-submit" type="submit">Search</button>
                     </form>
@@ -74,7 +75,11 @@
             <div class="row">
                 <div class="col-3">
                     <div class="card">
-                        <div class="card-img"></div>
+                        <div class="card-img">
+                            <div class="back-icon">
+                                <img style="width: 50px;" src="assets/arrow-round-left.svg">
+                            </div>
+                        </div>
                         <div class="card-body">
                           <h5 class="card-title">Vegan Sub</h5>
                           <p class="card-text"></p>
@@ -106,7 +111,11 @@
                 <div class="col-3">
                     <div class="col-3">
                         <div class="card">
-                            <div class="card-img"></div>
+                            <div class="card-img">
+                                <div class="next-icon">
+                                    <img style="width: 50px;" src="assets/arrow-round-right.svg">
+                                </div>
+                            </div>
                             <div class="card-body">
                               <h5 class="card-title">The Wacky Sub</h5>
                               <p class="card-text">Stuffed with veggies. Idk</p>
