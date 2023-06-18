@@ -1,5 +1,6 @@
 body{
     background-color: #cdec8f;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 nav{
     width: 100%;
@@ -10,19 +11,19 @@ nav{
     margin-left: 60px;
     margin-top: 15px;
 }
-.nav-com{
-    width: 500px;
-    height: 80px;
-    
+.nav-con{
+    width: 600px;
+    height: 80px;    
 }
 .nav-con ul{
     list-style: none;
 }
 .nav-con li{
     float: left;
-    margin-left: 45px;
+    margin-left: 40px;
     margin-top: 20px;
     color: #16181b;
+    font-weight: 300;
 }
 .nav-con li:hover{
     border-bottom: 2px solid #02643F;
@@ -31,17 +32,27 @@ nav{
     border-bottom: 2px solid #02643F;
 }
 .search-bar{
-    margin-top: 35px; 
- }
-.form-header{
-    margin-left: 275px;
-    margin-top: 50px;
+    margin-top: 35px;
+    margin-left: -10px;
 }
+.search-bar input{
+    border: 2px solid #02643F;
+    border-radius: 6px;
+}
+.search-bar button{
+    background-color: #02643F;
+    color: white;
+    border: 2px solid #02643F;
+    border-radius: 6px;
+    margin-left: 5px;
+    font-weight: 300;
+}
+
 #buildSub{
     width: 50%;
     height: 850px;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 60px;
     padding-top: 35px;
     padding-left: 70px;
     background-color: whitesmoke;
@@ -49,6 +60,7 @@ nav{
 }
 .bread{
     padding-bottom: 20px;
+    font-weight: 300;
 }
 .bread h3{
     padding-bottom: 10px;
@@ -60,6 +72,7 @@ nav{
     width: 100%;
     float: left;  
     padding-bottom: 20px;  
+    font-weight: 300;
 }
 .toppings-check{
     width: 30%;
@@ -69,6 +82,7 @@ nav{
     width: 100%;
     float: left;    
     padding-bottom: 35px;
+    font-weight: 300;
 }
 .sauces h3{
     padding-bottom: 10px;
@@ -93,19 +107,35 @@ nav{
     margin-left: -50px;
     border-radius: 3px;
     padding-left: 10px;
+    font-weight: 400;
 }
 .input-el{
     width: 80%; 
-    margin-left: 0px;
     height: 35px;
     margin-top: 30px;
     border: 2px solid #02643F;
     border-radius:3px;
+    font-weight: 300;
 }
 .btn{
     background-color: #02643F;
+    color: white;
+    font-weight: 300;
+
 }
 
+.totalBox{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    
+}
+.card-box{
+    width: 90%;
+    margin: 0 auto;
+}
 .order{
     width: 300px;
     height: 320px;
@@ -115,6 +145,7 @@ nav{
     padding-left: 15px;
     padding-top: 15px;
     padding-right: 15px;
+    text-transform: capitalize;
 }
 
 .order h3{
@@ -123,35 +154,33 @@ nav{
 .order p{
     border-bottom: 1px dashed grey;
     padding-top: 5px;
+    font-weight: 300;
 }
-.totalBox{
-    text-align: center;
-    margin-top: 30px;
-    padding-left: 10px;
-    padding-top: 5px;
-    border-bottom: 1px solid black;
+.checkout{
+    margin-left: 465px;
+    margin-top: 25px;
 }
 footer{
     width: 100%;
-    height: 150px;
+    height: 120px;
     margin-top: 100px;
-    background-color: lightgrey;
+    background-color: whitesmoke;
     font-family: 'Merriweather Sans', sans-serif;
     
 }
 .logo-footer{
     margin-left: 60px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 .copyright{
     text-align: center;
-    margin-top: 65px;
+    margin-top: 50px;
 }
 .image-con{
     margin-left: 95px;
 }
 .image-con img{
-    margin-top: 55px;
+    margin-top: 45px;
     margin-left: 5px;
 }
 

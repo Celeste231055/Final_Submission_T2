@@ -19,9 +19,10 @@
 
     <!--Internal Links-->
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/data.js"></script>
     <script src="js/index.js"></script>
 </head>
-<body>
+<body onload="subDisplay()">
     <nav>
         <div class="container-fluid">
             <div class="row">
@@ -51,8 +52,11 @@
     </nav>
     
     <header>
-        <div class="button-box">
-            <a href="pages/build_sub.html" class="btn btn-primary"><p>Order Now</p></a>
+        <div class="header-info">
+            <h3>Welcome to Super Subs</h3>
+            <p>The Subway shop that fits in with your lifestyle. There's a sub for everyone. You can create your own custom sub or brows one of our subs of the month. </p>
+            <a href="pages/build_sub.html" class="btn"><p>Create Sub</p></a>
+            <a href="#sub-month" class="btn"><p>Brows Subs</p></a>
         </div>
     </header>
 
@@ -76,87 +80,7 @@
                 <h2>Subs of the Month!</h2>
             </div>
 
-            <div class="row">
-                <div class="col-3">
-                    <div class="card">
-                        <div class="card-img one"></div>
-                        <div class="card-body">
-                          <h5 class="card-title">The Wacky Sub</h5>
-                          <p class="card-text">Stuffed with veggies. Idk</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-3">
-                    <div class="card">
-                        <div class="card-img two"></div>
-                        <div class="card-body">
-                          <h5 class="card-title">The Wacky Sub</h5>
-                          <p class="card-text">Stuffed with veggies. Idk</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-3">
-                    <div class="card">
-                        <div class="card-img three"></div>
-                        <div class="card-body">
-                          <h5 class="card-title">The Wacky Sub</h5>
-                          <p class="card-text">Stuffed with veggies. Idk</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-3">
-                    <div class="card">
-                        <div class="card-img four"></div>
-                        <div class="card-body">
-                          <h5 class="card-title">The Wacky Sub</h5>
-                          <p class="card-text">Stuffed with veggies. Idk</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-3">
-                    <div class="card">
-                        <div class="card-img five"></div>
-                        <div class="card-body">
-                          <h5 class="card-title">The Wacky Sub</h5>
-                          <p class="card-text">Stuffed with veggies. Idk</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-3">
-                    <div class="card">
-                        <div class="card-img six"></div>
-                        <div class="card-body">
-                          <h5 class="card-title">The Wacky Sub</h5>
-                          <p class="card-text">Stuffed with veggies. Idk</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-3">
-                    <div class="card">
-                        <div class="card-img seven"></div>
-                        <div class="card-body">
-                          <h5 class="card-title">The Wacky Sub</h5>
-                          <p class="card-text">Stuffed with veggies. Idk</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-3">
-                    <div class="card">
-                        <div class="card-img eight"></div>
-                        <div class="card-body">
-                          <h5 class="card-title">The Wacky Sub</h5>
-                          <p class="card-text">Stuffed with veggies. Idk</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="row" id="showSubs"></div>
         </section> 
     </div>  
 

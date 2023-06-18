@@ -14,7 +14,8 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     
     <!--Internal Links-->
     <link rel="stylesheet" href="../css/build_sub.css">
@@ -40,17 +41,18 @@
                         </ul>
                     </div>
                 </div>
-                <form class="search-bar">
-                    <input class="search-text" type="text" placeholder="Search">
-                    <button class="search-submit" type="submit">Search</button>
-                </form>
+                <div class="col-3">
+                    <form class="search-bar">
+                        <input class="search-text" type="text" placeholder="Search">
+                        <button class="search-submit" type="submit">Search</button>
+                    </form>
+                </div>
             </div>
         </div>
     </nav>
 
     <div class="container">
         
-        <h1 class="form-header">Build your Sub!</h1>  
         <form id="buildSub"> 
 
             <div class="bread">
@@ -120,7 +122,7 @@
               <div class="sauces">
                 <h3>Want a sauce with that?</h3>
                 <div class="sauce-check">
-                  <input type="checkbox" name="subSauce" id="tomatoSauce" value="tomatoSauce" data-calorie="28" data-price="2" onchange="priceUpdate();calorieUpdate()" checked>
+                  <input type="checkbox" name="subSauce" id="tomatoSauce" value="tomato sauce" data-calorie="28" data-price="2" onchange="priceUpdate();calorieUpdate()" checked>
                   <label for="tomatoSauce">Tomato Sauce</label>
                 </div>
 
@@ -130,13 +132,13 @@
                 </div>
 
                 <div class="sauce-check">
-                  <input type="checkbox" name="subSauce" id="honeyMustard" value="honeyMustard" data-calorie="25" data-price="6" onchange="priceUpdate();calorieUpdate()">
+                  <input type="checkbox" name="subSauce" id="honeyMustard" value="honey mustard" data-calorie="25" data-price="6" onchange="priceUpdate();calorieUpdate()">
                   <label for="honeyMustard">Honey Mustard</label>
                 </div>
 
                 <div class="sauce-check">
                   <input type="checkbox" name="subSauce" id="garlic" value="garlic" data-calorie="10" data-price="7" onchange="priceUpdate();calorieUpdate()">
-                  <label for="garlic">garlic Aioli</label>
+                  <label for="garlic">Garlic Aioli</label>
                 </div>
 
                 <div class="sauce-check">
@@ -159,12 +161,14 @@
               
             </form>
         </section>
-        
         <div class="totalBox">
           <h3 id="orderTotal">Order total: R0.00</h3>
         </div>
-
-          <div class="row" id="orderDisplay"></div>
+        <button class="btn checkout" type="submit" onclick="ownCheckout()">Proceed to Checkout</button>
+        <div class="row card-box" id="orderDisplay">
+          
+        </div>
+        
     </div>
 
 

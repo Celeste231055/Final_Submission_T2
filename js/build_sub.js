@@ -49,7 +49,6 @@ buildSub = () => {
         subCal: calorie
     })
 
-    console.log(subOrder);
     document.getElementById("priceUpdate").innerHTML = "R0.00"
     document.getElementById("buildSub").reset()
 }
@@ -77,7 +76,6 @@ priceUpdate = () => {
         }
     } 
 
-    console.log(price);
     document.getElementById("priceUpdate").innerHTML = "R" + price + ".00"
     
 }
@@ -128,18 +126,21 @@ orderDisplay = () => {
                 <div class="order" id="orderDisplay">
                     <h3>${name}</h3>
                     <p><strong>Bread: </strong>${bread}</p>
-                    <p><strong>Toppings: </strong>${toppings}</p>
-                    <p><strong>Sauce: </strong>${sauce}</p>
-                    <p><strong>Price: </strong>${price}</p>
+                    <p><strong>Toppings: </strong>${toppings.join(', ')}</p>
+                    <p><strong>Sauce: </strong>${sauce.join(', ')}</p>
+                    <p><strong>Price: </strong>R${price}</p>
                     <p><strong>Calories: </strong>${calories}</p>
                 </div>
             </div>`  
 
-        total.innerHTML = "R" + orderTotal + ".00"
+        total.innerHTML = "Order Total: R" + orderTotal + ".00"
+        
     }
-
-    console.log(order);
 }
 
-
+ownCheckout = () => {
+    let data = JSON.stringify(subOrder)
+    localStorage.setItem('ownOrder', data);
+    window.location.href = '../pages/checkout.html';
+}
 
